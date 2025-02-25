@@ -1,0 +1,8 @@
+@import 'tailwindcss';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: var(--font-manrope), var(--font-inter), Arial, sans-serif;
+}
