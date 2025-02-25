@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import { Inter, Manrope } from 'next/font/google';
+import { Analytics } from '@vercel/analytics/react';
 
 export const metadata: Metadata = {
   title: 'Site en cours de maintenance | Comores en ligne',
@@ -29,6 +30,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.variable} ${manrope.variable}`}>
         {children}
+        <Analytics />
       </body>
     </html>
   );
